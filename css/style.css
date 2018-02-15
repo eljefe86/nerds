@@ -1,4 +1,289 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/roboto.woff2') format('woff2'),
+       url('../fonts/roboto.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: optional;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/robotomedium.woff2') format('woff2'),
+       url('../fonts/robotomedium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: optional;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/robotobold.woff2') format('woff2'),
+       url('../fonts/robotobold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: optional;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #283136;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: #fff;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.visually-hidden {
+  position: absolute;
+  bottom: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-header {
+  background-color: #eeeeee;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.main-navigation__site-nav a,
+.main-navigation__user-controls a {
+  color: black;
+  outline: none;
+}
+
+.main-navigation__site-nav a:hover,
+.main-navigation__user-controls a:hover,
+.main-navigation__site-nav a:focus,
+.main-navigation__user-controls a:focus {
+  color: #fb565a;
+}
+
+.main-navigation__site-nav a:active,
+.main-navigation__user-controls a:active {
+  color: black;
+  opacity: 0.3;
+}
+
+.advantages__item-title {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 700;
+  color: black;
+}
+
+.btn {
+  display: inline-block;
+
+  font: inherit;
+  text-align: center;
+  color: white;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+
+  border: none;
+  padding: 0;
+  background-color: #fb565a;
+
+  cursor: pointer;
+  outline: none;
+}
+
+.btn_slider {
+  padding: 16px 55px;
+}
+
+.btn_red,
+.btn_green,
+.btn_yellow {
+  padding: 16px 40px;
+}
+
+.btn_contacts {
+  padding: 16px 40px;
+}
+
+.btn_form {
+  padding: 16px 84px;
+}
+
+.btn_slider:hover,
+.btn_slider:focus,
+.btn_red:hover,
+.btn_red:focus,
+.btn_contacts:hover,
+.btn_contacts:focus,
+.btn_form:hover,
+.btn_form:focus {
+  background-color: #e74246;
+}
+
+.btn_slider:active,
+.btn_red:active,
+.btn_contacts:active,
+.btn_form:active {
+  color: #d77376;
+  background-color: #d7373b;
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+}
+
+.btn_green {
+  background-color: #00ca74;
+}
+
+.btn_green:hover,
+.btn_green:focus {
+  background-color: #00bc6c;
+}
+
+.btn_green:active {
+  color: #4dc491;
+  background-color: #00aa62;
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+}
+
+.btn_yellow {
+  background-color: #efc84a;
+}
+
+.btn_yellow:hover,
+.btn_yellow:focus {
+  background-color: #eab534;
+}
+
+.btn_yellow:active {
+  color:#edc265;
+  background-color: #e5a722;
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+}
+
+.features__list h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: black;
+}
+
+.services__title {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+  color: black;
+}
+
+.services__promo {
+  font-weight: 700;
+  color: black;
+  text-transform: uppercase;
+}
+
+.services__benefits-table caption {
+  font-weight: 700;
+  color: black;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.services__benefits-title {
+  color: black;
+  text-transform: uppercase;
+}
+
+.services__stats {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+  color: black;
+}
+
+.services__brands-link {
+  display: block;
+  opacity: 0.2;
+  outline: none;
+}
+
+.services__brands-link:hover,
+.services__brands-link:focus {
+  opacity: 1;
+}
+
+.services__brands-link:active {
+  opacity: 0.1;
+}
+
+.contacts__title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: black;
+}
+
+.main-footer__promo b {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  color: black;
+}
+
+.modal {
+  box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
+}
+
+.modal-form__title {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+  color: black;
+}
+
+.modal-form__field-title {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: black;
+}
+
 #map {
-  width: 1725px;
-  height: 808px;
+  height: 308px;
 }
