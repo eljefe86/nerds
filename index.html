@@ -171,29 +171,31 @@
   </footer>
 
   <section class="modal modal-form">
-    <div class="modal-form__inner">
-      <h2 class="modal-form__title">Напишите нам</h2>
-      <div class="modal-form__content">
-        <div class="modal-form__row">
-          <div class="modal-form__input-element">
-            <label class="modal-form__field-title" for="name">Ваше имя:</label>
-            <input class="modal-form__input" id="name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+    <form action="" method="post">
+      <div class="modal-form__inner">
+        <h2 class="modal-form__title">Напишите нам</h2>
+        <div class="modal-form__content">
+          <div class="modal-form__row">
+            <div class="modal-form__input-element">
+              <label class="modal-form__field-title" for="name">Ваше имя:</label>
+              <input class="modal-form__input modal-form__placeholder" id="name" type="text" name="login" placeholder="Представьтесь, пожалуйста">
+            </div>
+            <div class="modal-form__input-element">
+              <label class="modal-form__field-title" for="email">Ваш e-mail:</label>
+              <input class="modal-form__input modal-form__placeholder" id="email" type="email" name="email" placeholder="Для отправки ответа">
+            </div>
           </div>
-          <div class="modal-form__input-element">
-            <label class="modal-form__field-title" for="email">Ваш e-mail:</label>
-            <input class="modal-form__input" id="email" type="email" name="email" placeholder="Для отправки ответа">
+          <div class="modal-form__row">
+            <label class="modal-form__field-title" for="text">Текст письма:</label>
+            <textarea class="modal-form__big-text modal-form__placeholder" id="text" name="text" placeholder="В свободной форме"></textarea>
           </div>
-        </div>
-        <div class="modal-form__row">
-          <label class="modal-form__field-title" for="text">Текст письма:</label>
-          <textarea class="modal-form__big-text" id="text" name="text" placeholder="В свободной форме"></textarea>
-        </div>
-        <div class="modal-form__submit">
-          <button class="btn btn_form" type="submit">Отправить</button>
+          <div class="modal-form__submit">
+            <button class="btn btn_form" type="submit">Отправить</button>
+          </div>
         </div>
       </div>
-    </div>
-    <button class="btn modal-close"><span class="visually-hidden">Закрыть</span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewbox="0 0 21 21"><path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/></svg></button>
+      <button class="btn modal-close"><span class="visually-hidden">Закрыть</span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewbox="0 0 21 21"><path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/></svg></button>
+    </form>
   </section>
 
   <script src="js/index.js"></script>
